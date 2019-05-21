@@ -855,6 +855,7 @@ Download_SSR(){
 	#wget -N --no-check-certificate "https://github.com/ToyoDAdoubi/shadowsocksr/archive/manyuser.zip"
 	git clone https://github.com/xiaomingzhong/ssr.git
 	mv ssr/shadowsocksr.zip ./shadowsocksr.zip
+	rm -rf ssr	
 	#git config --global http.sslVerify false
 	#env GIT_SSL_NO_VERIFY=true git clone -b manyuser https://github.com/ToyoDAdoubi/shadowsocksr.git
 	#[[ ! -e ${ssr_folder} ]] && echo -e "${Error} ShadowsocksR服务端 下载失败 !" && exit 1
